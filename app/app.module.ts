@@ -7,23 +7,25 @@ import { AppComponent } from './app.component';
 import { GamesComponent } from './games.component';
 import { SherriffComponent } from './sherriff.component';
 
-import { HeroService } from './hero.service';
-
 
 @NgModule({
   imports:      [ BrowserModule,
                   FormsModule,
                   RouterModule.forRoot([
                     {
-                      path: 'sheriff',
-                      component: SherriffComponent
+                      path: 'games',
+                      component: GamesComponent
                     },
+                    { path: 'sherriff',
+                      component: SherriffComponent
+                    }
                   ])
                 ],
   declarations: [ AppComponent,
-                  GamesComponent
+                  GamesComponent,
+                  SherriffComponent
                 ],
-  providers:    [ HeroService ],
+  providers:    [  ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

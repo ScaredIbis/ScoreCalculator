@@ -5,13 +5,12 @@ import { Component } from '@angular/core';
   template: `
   <h1>{{title}}</h1>
   <nav>
-    <a routerLink="/heroes">Heroes</a>
-    <a routerLink="/dashboard">Dashboard</a>
+    <a routerLink="/sherriff">Sherriff Of Nottingham</a>
   </nav>
   <router-outlet></router-outlet>
   `
 })
 
 export class AppComponent {
-    title = 'Tour of Heroes';
+    title = 'Game Score Calculator';
 }
