@@ -8,6 +8,14 @@ import { Component, OnInit } from '@angular/core';
 
 export class SherriffComponent implements OnInit {
 
+  playerName: string;
+  totals: Object = {
+    apples: null,
+    cheese: null,
+    bread: null,
+    chickens: null
+  }
+
 
   ngOnInit(): void {
     return;

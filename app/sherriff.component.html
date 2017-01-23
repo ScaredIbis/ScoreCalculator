@@ -1,4 +1,18 @@
-<h3>Sherriff Of NottingHam</h3>
-<div>
-  <p>Sherriff of nottingham view</p>
+<div class="container">
+  <h3>Sherriff Of NottingHam</h3>
+  <div class="row">
+    <label for="playerName">Player Name</label>
+    <input type="text" [(ngModel)]="playerName" name="playerName" placeholder="Enter Your Name"/><br>
+  </div>
+  <div class="row">
+    <h4>Market Totals</h4>
+    <label class="col-sm-2" for="Apples">Apple Count</label>
+    <input type="text" [(ngModel)]="totals.apples" name="Apples" placeholder="Apples Total"/><br>
+    <label class="col-sm-2" for="Cheese">Cheese Count</label>
+    <input type="text" [(ngModel)]="totals.cheese" name="Cheese" placeholder="Cheese Total"/><br>
+    <label class="col-sm-2" for="Bread">Bread Count</label>
+    <input type="text" [(ngModel)]="totals.bread" name="Bread" placeholder="Bread Total"/><br>
+    <label class="col-sm-2" for="Chickens">Chicken Count</label>
+    <input type="text" [(ngModel)]="totals.chickens" name="Chickens" placeholder="Chickens Total"/><br>
+  </div>
 </div>
